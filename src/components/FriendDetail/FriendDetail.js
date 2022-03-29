@@ -11,7 +11,7 @@ const FriendDetail = () => {
         fetch(`https://jsonplaceholder.typicode.com/users/${friendId}`)
             .then(res => res.json())
             .then(data => setFriend(data))
-    }, [])
+    }, [friendId])
 
     return (
         <div>
